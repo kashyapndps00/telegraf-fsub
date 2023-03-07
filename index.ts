@@ -32,7 +32,6 @@ export default async function fsub(opts: initial_options): Promise<Middleware<Co
                     ]);
                 }
                 ctx.reply(replyStr, { parse_mode });
-                break;
                 return;
             }
             else{
