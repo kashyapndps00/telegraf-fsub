@@ -1,6 +1,6 @@
 {
   "name": "telegraf-fsub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Plugin to Make Your Bot Force Users to Subscribe Your Channel",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "telegraf": "^4.11.2"
+    "telegraf": "^4.12.0"
   }
 }
