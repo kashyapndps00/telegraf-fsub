@@ -1,8 +1,8 @@
 {
   "name": "telegraf-fsub",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Plugin to Make Your Bot Force Users to Subscribe Your Channel",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "publish": "npm publish"
   },
@@ -15,10 +15,9 @@
   "author": "Kashyap <kashyapkumar610@gmail.com>",
   "maintainers": ["Kashyap"],
   "exports":{
-    ".":{
-      "default":"./src/index.ts"
-    }
+    ".":"./src/index.js"
   },
+  "files": ["src/"],
   "license": "ISC",
   "dependencies": {
     "telegraf": "^4.12.0"
