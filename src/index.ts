@@ -1,11 +1,12 @@
-import { Middleware, Context, Markup } from "telegraf"
+import { Middleware, Context, Markup, MiddlewareFn } from "telegraf"
+
 export interface initial_options {
     channels: string[] | number[] | [],
     notJoinedMessage?: string | "Hello {user}, You Must Joined {channel}",
     enable_inline?: boolean,
     parse_mode?: "Markdown" | "HTML"
 }
-export default async function fsub(opts: initial_options): Promise<Middleware<Context>> {
+export default function fsub<C extends Context = Context>(opts: initial_options):MiddlewareFn<C> {
     var { channels, notJoinedMessage, enable_inline, parse_mode } = opts;
     if (!enable_inline) enable_inline = false;
     if (!channels) throw new Error("FsubErr: Parameter Check Channels Not Provided");
