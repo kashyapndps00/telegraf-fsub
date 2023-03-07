@@ -19,7 +19,7 @@ import fsub from "telegraf-fsub"
 const botFsub = fsub({ 
     channels : ["@channel"]
 });
-bot.use(await botFsub)
+bot.use(botFsub)
 ```
 
 ### Advanced Installation
@@ -33,7 +33,7 @@ const botFsub = fsub({
     enable_inline: true,
     parse_mode: "HTML"
 });
-bot.use(await botFsub)
+bot.use(botFsub)
 ```
 
 **Note** : channels option is required without that bot will crash
