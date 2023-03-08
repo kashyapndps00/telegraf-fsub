@@ -2,7 +2,7 @@
 This plugin can help you to force your bot users to subscribe your channel before using the bot.
 
 ### Installation
-You can install this plugin any Telegraf Bot.
+You can install this plugin in any Telegraf Bot.
 
 Install the NPM Plugin
 ```bash
